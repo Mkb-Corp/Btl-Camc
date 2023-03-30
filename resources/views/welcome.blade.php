@@ -10,16 +10,6 @@
                             <h4
                                 class="font-medium lg:text-2xl text-xl capitalize text-slate-900 inline-block ltr:pr-4 rtl:pl-4 mb-4 sm:mb-0 flex space-x-3 rtl:space-x-reverse">
                                 Demande de Paiement</h4>
-                            <div class="flex sm:space-x-4 space-x-2 sm:justify-end items-center rtl:space-x-reverse">
-                                <button
-                                    class="btn leading-0 inline-flex justify-center bg-white text-slate-700 dark:bg-slate-800 dark:text-slate-300 !font-normal">
-                                    <span class="flex items-center">
-                                        <iconify-icon class="text-xl ltr:mr-2 rtl:ml-2 font-light"
-                                            icon="heroicons-outline:filter"></iconify-icon>
-                                        <span>Ajouter</span>
-                                    </span>
-                                </button>
-                            </div>
                         </div>
                         <div class="grid grid-cols-12 gap-5">
                             <div class="lg:col-span-8 col-span-12">
@@ -63,7 +53,55 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <a href="#" class="btn inline-flex justify-center bg-slate-900 text-slate-50 dark:bg-slate-900 dark:text-slate-300"">Voir et Valider</a>
+                                        <a href="#"
+                                            class="btn inline-flex justify-center bg-slate-900 text-slate-50 dark:bg-slate-900 dark:text-slate-300"">Voir
+                                            et Valider</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lg:col-span-4 col-span-12">
+                                <div class="card">
+                                    <div class="card-body flex flex-col p-6">
+                                        <header
+                                            class="flex mb-5 items-center border-b border-slate-100 dark:border-slate-700 pb-5 -mx-6 px-6">
+                                            <div class="flex-1">
+                                                <div class="card-title text-slate-900 dark:text-white">Ajouter un dossier
+                                                </div>
+                                            </div>
+                                        </header>
+                                        <div class="card-text h-full space-y-4">
+                                            <form action="#" method="post">
+                                                <div class="input-area">
+                                                    <label for="name" class="form-label">Dossier</label>
+                                                    <input id="name" type="text" class="form-control"
+                                                        placeholder="Dossier">
+                                                </div>
+                                                <div class="input-area">
+                                                    <label for="name" class="form-label">Client</label>
+                                                    <input id="name" type="text" class="form-control"
+                                                        placeholder="Client">
+                                                </div>
+                                                <div class="input-area">
+                                                    <label for="name" class="form-label">Ref Camion</label>
+                                                    <input id="name" type="text" class="form-control"
+                                                        placeholder="Ref Camion">
+                                                </div>
+                                                <div class="input-area">
+                                                    <label for="name" class="form-label">Montant</label>
+                                                    <input id="name" type="number" class="form-control"
+                                                        placeholder="Montant">
+                                                </div>
+                                                <div class="input-area">
+                                                    <label for="select" class="form-label">Devise</label>
+                                                    <select id="select" class="form-control">
+                                                        <option value="option1" class="dark:bg-slate-700">USD</option>
+                                                        <option value="option2" class="dark:bg-slate-700">FC</option>
+                                                    </select>
+                                                </div>
+                                                <button type="submit"
+                                                    class="btn block-btn inline-flex justify-center btn-primary">Ajouter</button>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
