@@ -55,7 +55,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <a href="#"
+                                        <a href="{{ route("payment_request") }}"
                                             class="btn inline-flex justify-center bg-slate-900 text-slate-50 dark:bg-slate-900 dark:text-slate-300"">Voir
                                             et Valider</a>
                                     </div>

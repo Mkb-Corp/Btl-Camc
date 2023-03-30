@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FileController;
+use App\Http\Controllers\PaymentRequestController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,3 +17,4 @@ use App\Http\Controllers\FileController;
 
 Route::get('/', [FileController::class, 'index'])->name('all_files');
 Route::post('/create_file', [FileController::class, 'create'])->name('file.create');
+Route::get('/payment_request', [PaymentRequestController::class, 'index'])->name('payment_request');
