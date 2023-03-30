@@ -364,9 +364,7 @@
                     </div>
                 </div>
 
-
-                <!-- END: Header -->
-                <!-- END: Header -->
+                @yield('content')
 
             </div>
 
