@@ -14,7 +14,7 @@ class FileController extends Controller
      */
     public function index(): View
     {
-        $files = File::all();
+        $files = File::where('state', "NO_SUBMITTED")->get();
 
         return view('welcome', [
             'files' => $files
@@ -35,7 +35,20 @@ class FileController extends Controller
         ]);
 
         File::create($request->post());
-        
+
         return redirect()->route('all_files');
+    }
+
+    /**
+     * Change files state to submitted
+     */
+    public function update_files_state()
+    {
+        $files = File::where('state', "NO_SUBMITTED");
+        foreach ($files as $file) {
+            $file->state = 'SUBMITTED';
+        }
+
+        return true;
     }
 }

@@ -61,8 +61,10 @@
                                                     icon="heroicons-outline:download"></iconify-icon>
                                             </span>
                                         </a>
-                                        <a href="#"
-                                            class="btn inline-flex justify-center bg-slate-900 text-slate-50 btn-primary"">Valider la demande</a>
+                                        <form action="{{ route('payment_request.create') }}" method="post">
+                                            @csrf
+                                            <button href="" class="btn inline-flex justify-center bg-slate-900 text-slate-50 btn-primary"">Valider la demande</button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>

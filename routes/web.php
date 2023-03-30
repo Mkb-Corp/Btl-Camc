@@ -18,3 +18,4 @@ use App\Http\Controllers\PaymentRequestController;
 Route::get('/', [FileController::class, 'index'])->name('all_files');
 Route::post('/create_file', [FileController::class, 'create'])->name('file.create');
 Route::get('/payment_request', [PaymentRequestController::class, 'index'])->name('payment_request');
+Route::POST('/payment_request', [PaymentRequestController::class, 'create'])->name('payment_request.create');

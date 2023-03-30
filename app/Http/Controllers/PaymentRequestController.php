@@ -7,6 +7,7 @@ use Illuminate\View\View;
 
 use App\Models\PaymentRequest;
 use App\Models\File;
+use App\Models\FileToPaymentRequest;
 
 class PaymentRequestController extends Controller
 {
@@ -19,5 +20,27 @@ class PaymentRequestController extends Controller
         return view('btl_views.payment_request', [
             "files" => $files
         ]);
+    }
+
+    /**
+     * Create Payment Request
+     */
+    public function create(Request $request)
+    {
+        if (File::where('state', "NO_SUBMITTED")->count() > 0) {
+            $payment_request = PaymentRequest::create([
+                "state" => "SUBMITTED"
+            ]);
+            $files = File::where('state', "NO_SUBMITTED")->get();
+            foreach ($files as $file) {
+                FileToPaymentRequest::create([
+                    'file_id' => $file->id,
+                    'payment_request_id' => $payment_request->id
+                ]);
+            }
+            $files = File::where('state', "NO_SUBMITTED")->update(["state" => "SUBMITTED"]);
+        }
+
+        return redirect()->route('all_files');
     }
 }

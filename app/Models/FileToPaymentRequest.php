@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class FileToPaymentRequest extends Model
 {
     use HasFactory;
+
+    protected $fillable = ['file_id', 'payment_request_id'];
 }
