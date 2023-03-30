@@ -60,7 +60,7 @@
                         <a href="#" class="navItem">
                             <span class="flex items-center">
                                 <iconify-icon class=" nav-icon" icon="heroicons-outline:home"></iconify-icon>
-                                <span>Dashboard</span>
+                                <span>Demande de Paiement</span>
                             </span>
                         </a>
                     </li>
@@ -118,7 +118,7 @@
                                                 <span class="icon-box">
                                                     <iconify-icon icon=heroicons-outline:home> </iconify-icon>
                                                 </span>
-                                                <div class="text-box">Dashboard</div>
+                                                <div class="text-box">Demande de Paiement</div>
                                             </div>
                                             <div
                                                 class="flex-none text-sm ltr:ml-3 rtl:mr-3 leading-[1] relative top-1">
@@ -126,85 +126,7 @@
                                             </div>
                                         </a>
 
-                                        <!-- Dropdown menu -->
 
-
-
-                                        <ul class="sub-menu">
-
-
-
-                                            <li>
-                                                <a href=index-2.html>
-                                                    <div class="flex space-x-2 items-start rtl:space-x-reverse">
-                                                        <iconify-icon icon=heroicons:presentation-chart-line
-                                                            class="leading-[1] text-base"> </iconify-icon>
-                                                        <span class="leading-[1]">
-                                                            Analytics Dashboard
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </li>
-
-
-
-                                            <li>
-                                                <a href=ecommerce-dashboard.html>
-                                                    <div class="flex space-x-2 items-start rtl:space-x-reverse">
-                                                        <iconify-icon icon=heroicons:shopping-cart
-                                                            class="leading-[1] text-base"> </iconify-icon>
-                                                        <span class="leading-[1]">
-                                                            Ecommerce Dashboard
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </li>
-
-
-
-                                            <li>
-                                                <a href=project-dashboard.html>
-                                                    <div class="flex space-x-2 items-start rtl:space-x-reverse">
-                                                        <iconify-icon icon=heroicons:briefcase
-                                                            class="leading-[1] text-base"> </iconify-icon>
-                                                        <span class="leading-[1]">
-                                                            Project Dashboard
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </li>
-
-
-
-                                            <li>
-                                                <a href=crm-dashboard.html>
-                                                    <div class="flex space-x-2 items-start rtl:space-x-reverse">
-                                                        <iconify-icon icon=ri:customer-service-2-fill
-                                                            class="leading-[1] text-base"> </iconify-icon>
-                                                        <span class="leading-[1]">
-                                                            CRM Dashboard
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </li>
-
-
-
-                                            <li>
-                                                <a href=banking-dashboard.html>
-                                                    <div class="flex space-x-2 items-start rtl:space-x-reverse">
-                                                        <iconify-icon icon=heroicons:wrench-screwdriver
-                                                            class="leading-[1] text-base"> </iconify-icon>
-                                                        <span class="leading-[1]">
-                                                            Banking Dashboard
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </li>
-
-                                        </ul>
-
-                                        <!-- Megamenu -->
 
 
                                     </li>

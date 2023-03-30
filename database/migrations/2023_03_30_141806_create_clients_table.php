@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('clients', function (Blueprint $table) {
             $table->id();
             $table->string('name')->unique();
-            $table->strip_tags('reference')->unique();
+            $table->string('reference')->unique();
             $table->timestamps();
         });
     }
