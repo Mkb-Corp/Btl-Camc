@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('payment_batches', function (Blueprint $table) {
             $table->id();
             $table->string('state');
+            $table->foreignId('payment_request_id');
             $table->timestamps();
         });
     }

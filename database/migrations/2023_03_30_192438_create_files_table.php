@@ -18,6 +18,7 @@ return new class extends Migration
             $table->double("amount");
             $table->string("currency");
             $table->string("state");
+            $table->foreignId('user_id');
             $table->timestamps();
         });
     }
