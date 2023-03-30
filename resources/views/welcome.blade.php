@@ -41,13 +41,15 @@
                                                         </thead>
                                                         <tbody
                                                             class="bg-white divide-y divide-slate-100 dark:bg-slate-800 dark:divide-slate-700">
+                                                            @foreach($files as $file)
                                                             <tr>
-                                                                <td class="table-td">2205DSFD</td>
-                                                                <td class="table-td">akl TTR</td>
-                                                                <td class="table-td ">2598/FG</td>
-                                                                <td class="table-td ">550</td>
-                                                                <td class="table-td ">USD</td>
+                                                                <td class="table-td">{{ $file->file_reference }}</td>
+                                                                <td class="table-td">{{ $file->client }}</td>
+                                                                <td class="table-td">{{ $file->ref_camion }}</td>
+                                                                <td class="table-td">{{ $file->amount }}</td>
+                                                                <td class="table-td">{{ $file->currency }}</td>
                                                             </tr>
+                                                            @endforeach
                                                         </tbody>
                                                     </table>
                                                 </div>
@@ -70,32 +72,33 @@
                                             </div>
                                         </header>
                                         <div class="card-text h-full space-y-4">
-                                            <form action="#" method="post">
+                                            <form action="{{ route("file.create") }}" method="post">
+                                                @csrf
                                                 <div class="input-area">
                                                     <label for="name" class="form-label">Dossier</label>
-                                                    <input id="name" type="text" class="form-control"
+                                                    <input required id="name" name="file_reference" type="text" class="form-control"
                                                         placeholder="Dossier">
                                                 </div>
                                                 <div class="input-area">
                                                     <label for="name" class="form-label">Client</label>
-                                                    <input id="name" type="text" class="form-control"
+                                                    <input required id="name" name="client" type="text" class="form-control"
                                                         placeholder="Client">
                                                 </div>
                                                 <div class="input-area">
                                                     <label for="name" class="form-label">Ref Camion</label>
-                                                    <input id="name" type="text" class="form-control"
+                                                    <input required id="name" name="ref_camion" type="text" class="form-control"
                                                         placeholder="Ref Camion">
                                                 </div>
                                                 <div class="input-area">
                                                     <label for="name" class="form-label">Montant</label>
-                                                    <input id="name" type="number" class="form-control"
+                                                    <input required id="name" name="amount" type="number" class="form-control"
                                                         placeholder="Montant">
                                                 </div>
                                                 <div class="input-area">
                                                     <label for="select" class="form-label">Devise</label>
-                                                    <select id="select" class="form-control">
-                                                        <option value="option1" class="dark:bg-slate-700">USD</option>
-                                                        <option value="option2" class="dark:bg-slate-700">FC</option>
+                                                    <select required id="select" name="currency" class="form-control">
+                                                        <option value="USF" class="dark:bg-slate-700">USD</option>
+                                                        <option value="FC" class="dark:bg-slate-700">FC</option>
                                                     </select>
                                                 </div>
                                                 <button type="submit"
