@@ -57,14 +57,6 @@
                 <ul class="sidebar-menu">
                     <li class="sidebar-menu-title">MENU</li>
                     <li class="">
-                        <a href="{{ route('all_files') }}" class="navItem">
-                            <span class="flex items-center">
-                                <iconify-icon class=" nav-icon" icon="heroicons-outline:home"></iconify-icon>
-                                <span>Demande de Paiement</span>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="">
                         <a href="{{ route('payment_requests.submitted') }}" class="navItem">
                             <span class="flex items-center">
                                 <iconify-icon class=" nav-icon" icon="heroicons-outline:list-bullet"></iconify-icon>
@@ -266,6 +258,7 @@
                                         </div>
                                         <span
                                             class="flex-none text-slate-600 dark:text-white text-sm font-normal items-center lg:flex hidden overflow-hidden text-ellipsis whitespace-nowrap">
+
                                             Admin</span>
                                         <svg class="w-[16px] h-[16px] dark:text-white hidden lg:inline-block text-base inline-block ml-[10px] rtl:mr-[10px]"
                                             aria-hidden="true" fill="none" stroke="currentColor"
