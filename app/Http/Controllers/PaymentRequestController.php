@@ -43,4 +43,25 @@ class PaymentRequestController extends Controller
 
         return redirect()->route('all_files');
     }
+
+    /**
+     * SUbmitted payment request
+     */
+    public function submitted():View
+    {
+        $data = PaymentRequest::where('state','SUBMITTED')->get();
+
+        return view('camc.payment_requests', [
+            'requests' => $data
+        ]);
+    }
+
+    /**
+     * Validate
+     */
+    public function payment_validation(Request $request)
+    {
+        dump($request);
+    }
+    
 }

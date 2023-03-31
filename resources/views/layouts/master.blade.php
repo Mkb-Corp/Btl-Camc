@@ -57,10 +57,18 @@
                 <ul class="sidebar-menu">
                     <li class="sidebar-menu-title">MENU</li>
                     <li class="">
-                        <a href="#" class="navItem">
+                        <a href="{{ route('all_files') }}" class="navItem">
                             <span class="flex items-center">
                                 <iconify-icon class=" nav-icon" icon="heroicons-outline:home"></iconify-icon>
                                 <span>Demande de Paiement</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="{{ route('payment_requests.submitted') }}" class="navItem">
+                            <span class="flex items-center">
+                                <iconify-icon class=" nav-icon" icon="heroicons-outline:list-bullet"></iconify-icon>
+                                <span>Demandes Soumises</span>
                             </span>
                         </a>
                     </li>

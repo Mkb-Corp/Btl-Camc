@@ -91,13 +91,13 @@
                                                 </div>
                                                 <div class="input-area">
                                                     <label for="name" class="form-label">Montant</label>
-                                                    <input required id="name" name="amount" type="number" class="form-control"
+                                                    <input required id="name" min="0" name="amount" type="number" class="form-control"
                                                         placeholder="Montant">
                                                 </div>
                                                 <div class="input-area">
                                                     <label for="select" class="form-label">Devise</label>
                                                     <select required id="select" name="currency" class="form-control">
-                                                        <option value="USF" class="dark:bg-slate-700">USD</option>
+                                                        <option value="USD" class="dark:bg-slate-700">USD</option>
                                                         <option value="FC" class="dark:bg-slate-700">FC</option>
                                                     </select>
                                                 </div>

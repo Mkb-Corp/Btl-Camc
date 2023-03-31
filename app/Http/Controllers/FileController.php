@@ -51,4 +51,17 @@ class FileController extends Controller
 
         return true;
     }
+
+    /**
+     * Submitted
+     */
+
+     public function submitted():View
+     {
+        $files = File::where('state', 'SUBMITTED')->get();
+
+        return view("camc.payment_requests", [
+            "files" => $files
+        ]);
+     }
 }
