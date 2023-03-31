@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FileController;
 use App\Http\Controllers\PaymentRequestController;
@@ -22,3 +23,4 @@ Route::POST('/payment_request', [PaymentRequestController::class, 'create'])->na
 Route::get('/submitted_files', [FileController::class, 'submitted'])->name('payment_requests.submitted');
 Route::post('/validate_payment', [PaymentRequestController::class, 'payment_validation'])->name('payment_validation');
 Route::get('/payments_state', [FileController::class, 'payments_state'])->name('payment_requests.state');
+Route::get('/login', [AuthController::class, 'login_view'])->name('login.view');
