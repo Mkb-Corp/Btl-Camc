@@ -8,7 +8,7 @@
                         <div class="flex justify-between flex-wrap items-center mb-6">
                             <h4
                                 class="font-medium lg:text-2xl text-xl capitalize text-slate-900 inline-block ltr:pr-4 rtl:pl-4 mb-4 sm:mb-0 flex space-x-3 rtl:space-x-reverse">
-                                Demandes de Paiement</h4>
+                                Statuts de Paiement</h4>
                         </div>
                         <div class="grid grid-cols-12 gap-5">
                             <div class="lg:col-span-12 col-span-12">
@@ -56,7 +56,7 @@
                                                                         <td class="table-td">
                                                                             @if ($file->state == 'SUBMITTED')
                                                                                 <div
-                                                                                    class="inline-block px-3 min-w-[90px] text-center mx-auto py-1 rounded-[999px] bg-opacity-25 text-success-500 bg-warning-500">
+                                                                                    class="inline-block px-3 min-w-[90px] text-center mx-auto py-1 rounded-[999px] bg-opacity-25 text-warning-500 bg-warning-500">
                                                                                     Soumis
                                                                                 </div>
                                                                             @elseif($file->state == 'VALIDATED')
@@ -82,7 +82,6 @@
                                             </div>
                                             <button type="submit"
                                                 class="btn btn-success inline-flex justify-center bg-slate-900 text-slate-50 dark:bg-slate-900 dark:text-slate-300">Valider</button>
-                                            <h5>Total : <span id="total">0</span> USD</h5>
                                         </form>
                                     </div>
                                 </div>

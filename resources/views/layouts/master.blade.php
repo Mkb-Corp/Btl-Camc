@@ -30,7 +30,7 @@
                     <img src="{{ asset('assets/images/logo/logo-c.svg') }}" class="black_logo" alt="logo">
                     <img src="{{ asset('assets/images/logo/logo-c-white.svg') }}" class="white_logo" alt="logo">
                     <span
-                        class="ltr:ml-3 rtl:mr-3 text-xl font-Inter font-bold text-slate-900 dark:text-white">DashCode</span>
+                        class="ltr:ml-3 rtl:mr-3 text-xl font-Inter font-bold text-slate-900 dark:text-white">CAMC</span>
                 </a>
                 <!-- Sidebar Type Button -->
                 <div id="sidebar_type" class="cursor-pointer text-slate-900 dark:text-white text-lg">
