@@ -17,8 +17,9 @@ return new class extends Migration
             $table->string("ref_camion");
             $table->double("amount");
             $table->string("currency");
-            $table->string("state");
-            $table->foreignId('user_id');
+            $table->string("state")->default('NO_SUBMITTED');
+            $table->string("client");
+            $table->foreignId('user_id')->nullable(true);
             $table->timestamps();
         });
     }
