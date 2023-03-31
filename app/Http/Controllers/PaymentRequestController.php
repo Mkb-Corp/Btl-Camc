@@ -8,6 +8,7 @@ use Illuminate\View\View;
 use App\Models\PaymentRequest;
 use App\Models\File;
 use App\Models\FileToPaymentRequest;
+use Illuminate\Support\Facades\DB;
 
 class PaymentRequestController extends Controller
 {
@@ -61,7 +62,11 @@ class PaymentRequestController extends Controller
      */
     public function payment_validation(Request $request)
     {
-        dump($request);
+        File::whereIn('id', $request->checkbox)->update(["state" => "VALIDATED"]);
+
+        File::where('state', 'SUBMITTED')->update(["state" => "REJECTED"]);
+
+        return redirect()->route('payment_requests.submitted').with("success");
     }
-    
+
 }
