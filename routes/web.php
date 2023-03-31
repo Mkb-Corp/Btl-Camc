@@ -21,3 +21,4 @@ Route::get('/payment_request', [PaymentRequestController::class, 'index'])->name
 Route::POST('/payment_request', [PaymentRequestController::class, 'create'])->name('payment_request.create');
 Route::get('/submitted_files', [FileController::class, 'submitted'])->name('payment_requests.submitted');
 Route::post('/validate_payment', [PaymentRequestController::class, 'payment_validation'])->name('payment_validation');
+Route::get('/payments_state', [FileController::class, 'payments_state'])->name('payment_requests.state');

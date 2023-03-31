@@ -72,6 +72,14 @@
                             </span>
                         </a>
                     </li>
+                    <li class="">
+                        <a href="{{ route('payment_requests.state') }}" class="navItem">
+                            <span class="flex items-center">
+                                <iconify-icon class=" nav-icon" icon="heroicons-outline:list-bullet"></iconify-icon>
+                                <span>Etat des Paiements</span>
+                            </span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>

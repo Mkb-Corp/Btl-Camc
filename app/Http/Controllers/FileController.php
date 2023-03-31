@@ -64,4 +64,19 @@ class FileController extends Controller
             "files" => $files
         ]);
      }
+
+     /**
+      * All clients payment
+      */
+
+      public function payments_state():View
+      {
+
+        $files = File::where('state', '!=', 'NO_SUBMITTED')->get();
+
+        dump($files);
+        return view('btl_views.payment_state', [
+            'files' => $files
+        ]);
+      }
 }
